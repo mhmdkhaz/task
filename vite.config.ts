@@ -12,4 +12,11 @@ export default defineConfig({
       { find: "@/store", replacement: path.resolve(__dirname, "src/store") },
     ],
   },
+
+  build: {
+    outDir: "dist",
+    rollupOptions: {
+      external: ["msw", "msw/browser", "msw/node"], // إذا كنت تستخدم MSW
+    },
+  },
 });
