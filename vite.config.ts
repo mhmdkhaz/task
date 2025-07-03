@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     rollupOptions: {
-      external: ["msw", "msw/browser", "msw/node"], // إذا كنت تستخدم MSW
+      external: ["msw", "msw/browser", "msw/node"],
     },
   },
 });
